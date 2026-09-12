@@ -1,4 +1,4 @@
-# Dumroo.ai — Book Q&A Chatbot (Online + Offline RAG)
+# Book Q&A Chatbot (Online + Offline RAG)
 
 > **Dev Intern Assignment for Dumroo.ai** — AI-powered K-12 education platform.  
 > **Author:** Danish Rizwan  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 In K-12 education, pedagogical accuracy and network resilience are paramount. Standard generative AI often hallucinates or references out-of-syllabus materials, while student devices frequently operate in low-bandwidth or offline classroom environments. 
 
@@ -16,7 +16,7 @@ This project solves both challenges through a **Dual-Mode Architecture**:
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
 ```
                                   ┌────────────────────────┐
@@ -53,7 +53,7 @@ This project solves both challenges through a **Dual-Mode Architecture**:
 
 ---
 
-## ⚖️ Mode Comparison Matrix
+## Mode Comparison Matrix
 
 | Feature | Offline Mode | Online Mode |
 | :--- | :--- | :--- |
@@ -68,7 +68,7 @@ This project solves both challenges through a **Dual-Mode Architecture**:
 
 ---
 
-## 🚀 Key Architectural Decisions
+## Key Architectural Decisions
 
 ### 1. Single-Book Scope Decision
 - **Curriculum Alignment:** In K-12 education, syllabi follow prescribed textbooks (e.g. CBSE/NCERT, State Boards). Pulling unvetted information from external books or open-web scraping introduces out-of-scope notation and confusing contradictions.
@@ -109,7 +109,7 @@ This project solves both challenges through a **Dual-Mode Architecture**:
 
 ---
 
-## 🛠️ Tech Stack & Directory Structure
+## Tech Stack & Directory Structure
 
 - **Framework:** Next.js 16 (App Router, Turbopack / Webpack on Windows) + TypeScript
 - **Database & Vector Store:** Supabase PostgreSQL with `pgvector` & HNSW indexing
@@ -149,7 +149,7 @@ This project solves both challenges through a **Dual-Mode Architecture**:
 
 ---
 
-## ⚙️ Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 ```bash
@@ -182,15 +182,15 @@ npx tsx scripts/test-db.ts
 Expected output:
 ```
 ==============================================================
-🔍 Supabase Database Verification Check
+Supabase Database Verification Check
 ==============================================================
-✅ Successfully connected to Supabase PostgreSQL!
-✅ pgvector extension status: INSTALLED & ACTIVE
-📁 Public tables: book_chunks
-📊 Stored textbook chunks in 'book_chunks': 60
-⚡ Indexes on 'book_chunks': book_chunks_pkey, book_chunks_embedding_idx
+Successfully connected to Supabase PostgreSQL!
+pgvector extension status: INSTALLED & ACTIVE
+Public tables: book_chunks
+Stored textbook chunks in 'book_chunks': 60
+Indexes on 'book_chunks': book_chunks_pkey, book_chunks_embedding_idx
 ==============================================================
-🎉 VERIFICATION COMPLETE: Supabase is fully configured and holding data!
+VERIFICATION COMPLETE: Supabase is fully configured and holding data!
 ==============================================================
 ```
 
@@ -203,7 +203,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 📖 Ingestion Pipeline & Custom Books
+## Ingestion Pipeline & Custom Books
 
 To index a different curriculum textbook:
 1. Drop your PDF file into `/data/source/book.pdf`.
@@ -222,7 +222,7 @@ To index a different curriculum textbook:
 
 ---
 
-## 🧪 Verification & Testing Guide
+## Verification & Testing Guide
 
 | Test | Command / Action | Expected Result |
 | :--- | :--- | :--- |
@@ -234,5 +234,5 @@ To index a different curriculum textbook:
 
 ---
 
-## 👤 Author
+## Author
 - **Danish Rizwan** — Assignment submission for **Dumroo.ai** (Dev Intern Role).
